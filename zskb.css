@@ -1,0 +1,416 @@
+<style>
+  html, body {
+  height: 100%; 
+  padding:0;
+  margin: 0;
+  font-family:'Open Sans', sans-serif;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding-bottom: 50px;
+}
+#head
+{
+  height:600px;
+}
+.set
+{
+  height:750px;
+}
+.dare{
+  display:grid;
+  height:700px;
+  width:800px;
+  align-content:center;
+  grid-template-columns: auto auto auto;
+  grid-gap:15px;
+  margin:auto;
+    }
+    .cdd{
+      padding:10px;
+      width:250px !important;
+      height:350px !important;
+      border-radius:10px;
+      transition:0.3s linear;
+    }
+    .cdd:hover{
+      box-shadow:0 10px 40px rgba(0,0,0,0.5);
+      border:none;
+
+    }
+    .tent{
+      padding:5px;
+      text-align:center;
+    }
+    .tent p{
+      color:#7f8c8d;
+    }
+    .tent h3{
+      font-size:15px !important;
+    }
+    .img{
+      width:230px;
+      height:150px;
+      
+    
+    }
+    .cfoot button{
+      display:none;
+    }
+    .cfoot button a{
+      color:#FFFFFF;
+      text-decoration:none;
+    }
+    .explore
+    {
+      color:white;
+    }
+    .cdd:hover .tent a{
+      color:blue;
+      font-size:20px;
+      padding:0px;
+    }
+    .cdd:hover .tent p
+    {
+      color:black;
+    }
+    .cdd:hover .cfoot button{
+      
+      background:darkblue;
+      color:#fff !important;
+      text-align:center;
+      width:230px;
+      height:50px;
+      padding:3px;
+      display:block;
+    }
+    .cdd:hover .img{
+      margin:0;
+      overflow:hidden;
+     
+
+    }
+    a{
+      text-decoration:none;
+      color:black;
+    }
+    /*about*/
+    .break{
+      position:relative;
+      background:url(img/break.jpg);
+      width:100%;
+      height:100px;
+     
+    }
+    .break h4{
+      padding:30px;
+      font-size:30px;
+      color:white;
+      text-align:center;
+    }
+    .abt{
+      position:relative;
+      display:flex;
+      width:1000px;
+      padding:20px;
+      margin:auto;
+    }
+    .aubtn{
+       width:150px;
+       height:50px;
+       background:orange;
+       color:white;
+       border:none;
+       border-radius:50px;
+    }
+    .aubtn:hover{
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+      background:white;
+      color:darkblue;
+      border:1px solid darkblue;
+    }
+.sec1 p{
+      font-size:15px;
+      line-height:1.6;
+      color:#7f8c8d;
+}
+.counter-section{
+  color:blue;
+}
+.counter-box{
+  font-size:20px;
+}
+.counter-box .counter{
+  font-size:60px;
+}
+.counter{
+color:blue !important;
+font-size:60px;
+}
+.mcal{
+  position:relative;
+  margin-left:650px;
+  bottom:180px;
+  display:flex;
+}
+.one{
+width:250px;
+height:100px;
+text-align:center; 
+}
+.scon
+{ 
+  position:relative;
+  font-size:20px;
+  color:#7f8c8d;
+}
+.feat{
+      position:relative;
+      margin-bottom:80px;
+      width: 1200px !important;
+      height:430px !important;
+      overflow:hidden;
+      margin:auto;
+      outline:0;
+     
+    }
+    .swiper-slide {
+      height:400px !important;
+      width:300px !important;
+      font-size: 18px;
+      background: #fff;
+      border:1px solid black;
+      /* Center slide text vertically */
+    }
+    .swiper-slide img
+    { 
+      position:relative;
+      width:300px;
+      padding:0 !important;
+      transition:0.3s linear;
+    }
+    .swiper-slide h3
+    { 
+      position:relative;
+    }
+    .swiper-slide p
+    {
+      font-size:12px !important;
+      line-height:1.6;
+    }
+    .swiper-slide button
+    {
+      position:relative;
+      bottom:10px !important;
+      left:10px;
+      border-radius:50px;
+      width:120px !important;
+      height:40px !important;
+      background:#001f99;
+      cursor:pointer;
+      border:none;
+      font-size:15px;
+      color:white;
+    }
+    .swiper-slide button a
+    {
+      color:#ffffff;
+    }
+    .swiper-slide button:hover 
+    {
+      background:white;
+      border:2px solid darkblue;
+      color:black;
+      outline:0;
+    }
+    .art{
+      height:60px !important;
+      position:relative;
+      padding:10px;
+      bottom:80px;
+    }
+    .art h3{
+      font-size:20px;
+    }
+    .dat
+    {
+      padding:3px;
+      position:relative;
+      width:60px;
+      height:80px;
+      background:#FF5733;
+      color:white;
+      bottom:80px;
+    }
+    .dat p
+    {
+      line-height:0.5;
+      text-align:center;
+  
+    }
+    .hbot 
+    {
+      font-size:35px !important;
+      float:left !important;
+    }
+    .ok1{
+      bottom:110px;
+      padding:10px;
+      z-index:100;
+    }
+    .ok1 h1{
+      position:relative;
+      color:orange;
+      left:40%;
+      bottom:120px;
+      font-size:50px;
+      font-weight:bold;
+      display:inline;
+      text-decoration:underline;
+      padding:5px;
+    }
+    .ok1 p{
+      position:relative;
+      color:#7f8c8d;
+      width:300px;
+      left:75%;
+      bottom:110px;
+      text-align:left;
+      font-size:20px;
+      line-height:1.6;
+
+    }
+    .hbt{
+      position:relative;
+      width:200px;
+      height:50px;
+      border-radius:50px;
+      background:darkblue;
+      border:none;
+      cursor: pointer;
+      left:35%;
+      bottom:110px;
+      color:white;
+    }
+    .hbt:hover{
+      background:white;
+      border:1px solid blue;
+      color:black;
+      box-shadow:0 10px 40px rgba(0,0,0,0.5);
+
+    }
+    .d-block{
+    height:600px;
+    }
+    .fok
+    {
+      position:relative;
+      bottom:150px;
+    }
+    .fok h2
+    {
+      position:relative;
+      font-size:50px;
+      font-weight:bold;
+      color:white;
+      text-align:left !important;
+    }
+    .fok p
+    {
+      position:relative;
+      font-size:20px;
+      line-height:1.6;
+      text-align:left;
+      padding-left:10px;
+      color:black;
+      width:450px;
+      height:100px;
+      float:left;
+      background-image: linear-gradient(120deg,rgba(207, 217, 223, 1) 0%, rgba(226, 235, 240, 0.5) 100%);
+    }
+    .secbtn
+    {
+      position:relative;
+      width:200px;
+      height:50px;
+      background:#001f99;
+      border:none;
+      cursor:pointer;
+      color:white;
+      right:600px !important;
+      top:120px;
+    }
+     .secbtn:hover{
+      background:white;
+      border:1px solid blue;
+      color:black;
+      box-shadow:0 10px 40px rgba(0,0,0,0.5);
+
+    }
+    @media (max-width:991px)
+    {
+      .fok
+      {
+        position:relative;
+        z-index:1;
+        float:left;
+      }
+      .fok h2
+      {
+        font-size:30px;
+      }
+      .fok p
+      {
+        font-size:15px;
+        width:200px !important;
+      }
+      .set
+      {
+        height:2200px;
+      }
+      .dare 
+      {
+  display:block;
+  height:2200px;
+  width:250px;
+  margin:auto;
+  justify-content:center;
+  align-content:center;
+    }
+    .abt{
+      position:relative;
+      display:block;
+      height:1000px;
+      width:400px;
+      padding:0 !important;
+      margin:0 !important;
+    }
+    .sec1
+    {
+      top:120 !important;
+      width:250px !important;
+      position:relative;
+      left:50px;
+    }
+    .sec1 img
+    {
+      margin:auto !important;
+      float:none !important;
+      width:350px;
+    }
+    .sec1 p
+    {
+      position:relative;
+      float:none !important;
+      left:20px;
+      font-size:10px;
+    }
+    .mcal{
+  position:relative;
+  display:block !important;
+  float:none;
+}
+   } 
+</style>
